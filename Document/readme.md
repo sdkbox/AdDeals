@@ -21,12 +21,6 @@ AdDeals.AdDealsWrapper.ShowPopupAd(adType);
 
 min support iOS: 8
 
-#### For Unity 5.x
-
-if you use Unity 5.x, Unity will add `AdDeals.framework` to `Embedded Binaries` section. but add to `Linked Frameworks and Libraries`. so please remove it from `Linked Frameworks and Libraries` section, and add it to `Embedded Binaries`. should be like follow:
-
-![](./unity_xcode_embeddedframework.png)
-
 
 ### Android
 
@@ -106,6 +100,13 @@ if you use Unity 5.x, please check `YOUR_EXPORTS_PROTECT_ROOT/build.gradle`, mak
 
 
 ## Versions
+
+* Version 0.0.4
+
+Release Date: 2018.12.10
+
+fix xcode project issue on unity 5.5
+
 
 * Version 0.0.3
 
