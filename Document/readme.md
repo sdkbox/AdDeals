@@ -21,16 +21,45 @@ AdDeals.AdDealsWrapper.ShowPopupAd(adType);
 
 min support iOS: 8
 
+#### For Unity 5.x
+
+if you use Unity 5.x, Unity will add `AdDeals.framework` to `Embedded Binaries` section. but add to `Linked Frameworks and Libraries`. so please remove it from `Linked Frameworks and Libraries` section, and add it to `Embedded Binaries`. should be like follow:
+
+![](./unity_xcode_embeddedframework.png)
+
 
 ### Android
 
-min support sdk: 15
+min support android sdk: 15
 
 this plugin is not support build APK directly in Unity.
 
 please export Gradle Project, and build&run with Android Studio.
 
 ![](./unity_android_export.png)
+
+#### For Unity 5.x
+
+if you use Unity 5.x, please check `YOUR_EXPORTS_PROTECT_ROOT/build.gradle`, make it look like follow:
+
+```gradle
+    ...
+    android {
+        ...
+        defaultConfig {
+            minSdkVersion 15
+            targetSdkVersion 28
+            versionCode 1
+            versionName '0.1'
+            ...
+        }
+        ...
+    }
+    ...
+```
+
+
+
 
 ### Windows UWP
 
@@ -77,6 +106,13 @@ please export Gradle Project, and build&run with Android Studio.
 
 
 ## Versions
+
+* Version 0.0.3
+
+Release Date: 2018.12.10
+
+support iOS & Android
+
 
 * Version 0.0.2
 
