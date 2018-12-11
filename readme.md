@@ -1,14 +1,3 @@
 # AdDeals
 
-AdDeals For Unity plugin
-
-
-# Versions
-
-* Version 0.0.2
-
-Release Date: 2018.11.30
-
-support Unity 5.5.4+ patch release version
-
-[document is here](Document/readme.md)
+AdDeals For Unity plugin, [documentation](http://docs.sdkbox.com/en/unity/addeals/) and [sample](https://github.com/sdkbox/AdDeals-Unity-Sample).
